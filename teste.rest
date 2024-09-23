@@ -1,0 +1,23 @@
+
+#Logar
+POST http://127.0.0.1:8000/login
+Content-Type: application/json
+
+{"username":"Teste", "password":"Pass1234!"}
+
+###
+
+#Criar conta
+POST http://127.0.0.1:8000/signup
+Content-Type: application/json
+
+{"username":"Teste", "password":"Pass1234!", "email":"teste@teste.com"}
+
+###
+
+GET http://127.0.0.1:8000/obtain_token
+Content-Type: application/json
+Authorization: Token 532e5782bc60d15654e4d323f7b9645853e211df
+
+
+###[Token [token]]
